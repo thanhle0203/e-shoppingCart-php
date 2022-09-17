@@ -33,10 +33,10 @@
     <div class="container" id="thecards">
         <div class="row text-center py-5">
             <?php
-                component("MacbookPro", 1200, "./upload/product1.jpg");
-                component("Iphone 14", 2000, "./upload/product2.png");
-                component("Sam Sung Galaxy", 1200, "./upload/product3.png");
-                component("Bose Headphones", 2000, "./upload/product4.png");
+                $result = $database->getData();
+                while ($row=mysqli_fetch_assoc($result)) {
+                    component($row['product_name'], $row['product_price'], $row['product_image']);
+                }
             ?>  
 
         </div>
