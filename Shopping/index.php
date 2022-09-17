@@ -60,6 +60,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
 </head>
 <body>
+
+    <?php require_once("php/header.php") ?>
+
     <!-- the cards -->
     <div class="container" id="thecards">
         <div class="row text-center py-5">
