@@ -5,7 +5,7 @@ function component($product_name, $product_price, $product_img, $product_id){
         <div class=\"col-md-3 col-sm-6 my-3 my-md-0 ml-3 mr-3 display: inline-block\">
             <form action=\"index.php\" method=\"post\" display: inline-block class=\"form\" >
 
-                <div class=\"card shadow mb-3 h-100 mt-3 display: inline-block \">
+                <div class=\"card shadow mb-3 mt-3 display: inline-block \">
             
                         <div>
                             <img 

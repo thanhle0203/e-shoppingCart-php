@@ -1,21 +1,7 @@
-.row{
-    display: inline-block;
-}
 
-.col{
-    display: inline-block;
-}
-
-.card{
-    display: inline-flex;
-}
-
-form{
-    display: inline-block;
-}
 
 img{
-    max-width: 100%;
+max-width: 100%;
   height: auto;
   background-color: grey;
 }
