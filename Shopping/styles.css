@@ -1,0 +1,17 @@
+.col{
+    display: block;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+
+  background-color: grey;
+}
+
+.fa-star,
+.fa-star-harf{
+    color: rgb(177, 177, 10);
+    padding: 3% 0;
+}
