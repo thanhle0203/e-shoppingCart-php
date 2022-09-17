@@ -2,8 +2,12 @@
     require_once("php/db.php");
     require_once("./php/component.php");
 
-    // crate instance of db class
+    // create instance of db class
     $database = new CreateDb("Productdb", "Producttb");
+
+    if(isset($_POST['add'])) {
+        print_r($_POST['product_id']);
+    }
     
 ?>
 
@@ -35,7 +39,7 @@
             <?php
                 $result = $database->getData();
                 while ($row=mysqli_fetch_assoc($result)) {
-                    component($row['product_name'], $row['product_price'], $row['product_image']);
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
                 }
             ?>  
 

@@ -1,6 +1,6 @@
 <?php
 
-function component($product_name, $product_price, $product_img){
+function component($product_name, $product_price, $product_img, $product_id){
     $element="
         <div class=\"col-md-3 col-sm-6 my-3 my-md-0 ml-3 mr-3 display: inline-block\">
             <form action=\"index.php\" method=\"post\" display: inline-block class=\"form\" >
@@ -39,7 +39,10 @@ function component($product_name, $product_price, $product_img){
                                 name=\"add\">Add to Card 
                                 <i 
                                     class=\"fas fa-cart-shopping\">
-                                </i></button>
+                                </i>
+                            </button>
+
+                            <input type='hidden' name='product_id' value='$product_id'>
                         </div>
                     </div>
                     
