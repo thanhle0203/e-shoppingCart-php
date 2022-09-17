@@ -1,21 +1,21 @@
 <?php
 
-function component(){
+function component($product_name, $product_price, $product_img){
     $element="
-        <div class=\"col-md-3 col-sm-6 my-3 my-md-0 diplay: block \">
-            <form action=\"index.php\" method=\"post\">
+        <div class=\"col-md-3 col-sm-6 my-3 my-md-0 ml-3 mr-3 display: inline-block\">
+            <form action=\"index.php\" method=\"post\" display: inline-block class=\"form\" >
 
-                <div class=\"card shadow\" >
+                <div class=\"card shadow mb-3 h-100 mt-3 display: inline-block \">
             
                         <div>
                             <img 
-                                src=\"https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SL1500_.jpg\" 
+                                src=\"$product_img\" 
                                 class=\"card-fluid card-img-top\" 
                                 alt=\"Image1\">
                         </div>
                         
-                        <div class=\"card-body\">
-                            <h5 class=\"card-title\">Macbook Pro 14</h5>
+                        <div class=\"card-body display: inline-block\">
+                            <h5 class=\"card-title\">$product_name</h5>
                             <h6>
                                 <i class=\"fas fa-star\"></i>
                                 <i class=\"fas fa-star\"></i>
@@ -24,12 +24,12 @@ function component(){
                                 <i class=\"far fa-star\"></i>
                             
                             </h6>
-                            <p class=\"card-text\">
+                            <p>
                                 The new MacBook Pro delivers game-changing performance for pro users. 
                             </p>
                             <h5>
                                 <small><s class=\"text-secondary\">$1600</s><small>
-                                <span class=\"price\">$1400</span>
+                                <span class=\"price\">$product_price</span>
                             </h5>
 
 
