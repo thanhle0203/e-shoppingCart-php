@@ -1,14 +1,18 @@
 
-
+.col{
+    width: 100rem;
+    height: 300rem;
+}
 img{
-max-width: 100%;
-  height: auto;
-  background-color: grey;
+    width: 50rem;
+    height: 30rem;
+    background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
 }
 
 .fa-star,
-.fa-star-harf{
-    color: rgb(177, 177, 10);
+.fa-star-half{
+    color: yellowgreen;
     padding: 3% 0;
 }
 
@@ -20,4 +24,12 @@ max-width: 100%;
 
 .shopping-cart{
     padding: 3% 0;
+}
+
+.cart-items + .cart-items{
+    padding: 2% 0;
+}
+
+.price-details h6{
+    padding: 3% 2%;
 }
