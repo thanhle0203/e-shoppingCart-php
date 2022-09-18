@@ -23,6 +23,7 @@
             <a href="cart.php" class="nav-item nav-link active">
                 <h5 class="px-5 cart">
                     <i class="fas fa-shopping-cart"></i>Cart
+                    <span id="cart_count">0</span>
                 </h5>
             </a>
         </div>
